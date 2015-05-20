@@ -1,11 +1,3 @@
-
-#include "x_exports.h"
-
-class X_API Cx {
-public:
-	Cx(void);
-};
-
-extern X_API int nx;
-
-X_API int fnx(void);
+#include "x/x_types.h"
+#include "x/x_string.h"
+#include "x/x_app.h"
