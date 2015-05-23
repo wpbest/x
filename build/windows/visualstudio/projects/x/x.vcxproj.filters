@@ -36,6 +36,12 @@
     <ClCompile Include="..\..\..\..\..\source\x\x_event.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_platform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\source\x\x_pch.h">
@@ -60,6 +66,12 @@
       <Filter>Interface Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\include\x\x_event.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_platform.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_graphics.h">
       <Filter>Interface Files</Filter>
     </ClInclude>
   </ItemGroup>

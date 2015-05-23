@@ -11,9 +11,9 @@ namespace x
 		x_String::x_String();
 		x_String::x_String(const char * cstring);
 		virtual x_String::~x_String();
-		operator x::x_PWchar32();
+		operator x_PWchar32();
 	private:
-		x::x_PWchar32 m_wcstring;
+		x_PWchar32 m_wcstring;
 	};
 
 }

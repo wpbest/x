@@ -1,12 +1,12 @@
 #pragma once
 
-#include "x_types.h"
+#include "x/x_types.h"
 #include "x/x_exports.h"
 
 namespace x
 {
 	template < class T >
-	class X_API Stack
+	class X_API x_Stack
 	{
 	private:
 		struct Node
@@ -18,11 +18,11 @@ namespace x
 		Node *m_top;
 
 	public:
-		Stack();
-		virtual ~Stack();
+		x_Stack();
+		virtual ~x_Stack();
 		void push(T);
 		void pop(T &);
-		x::x_Bool isEmpty();
+		x_Bool isEmpty();
 	};
 
 }

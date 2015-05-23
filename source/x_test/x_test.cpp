@@ -17,12 +17,12 @@ TestApp::~TestApp()
 
 x::x_Bool TestApp::create(x::x_PWchar32 windowTitle, x::x_Sint32 width, x::x_Sint32 height)
 {
-	return x::x_Bool(false);
+	return x_App::create(windowTitle, width, height);
 }
 
 x::x_Sint32 TestApp::run(void)
 {
-	return x::x_Sint32(1);
+	return x_App::run();
 }
 
 int main(int argc, char* argv[])

@@ -5,13 +5,13 @@
 namespace x
 {
 	template < class T >
-	Stack<T>::Stack()
+	x_Stack<T>::x_Stack()
 	{
 		m_top = nullptr;
 	}
 
 	template < class T >
-	Stack<T>::~Stack()
+	x_Stack<T>::~x_Stack()
 	{
 		Node *nodePtr, *nextNode;
 		nodePtr = m_top;
@@ -25,7 +25,7 @@ namespace x
 	}
 
 	template < class T >
-	void Stack<T>::push(T value)
+	void x_Stack<T>::push(T value)
 	{
 		Node *newNode;
 		newNode = new Node;
@@ -44,7 +44,7 @@ namespace x
 	}
 
 	template < class T >
-	void Stack<T>::pop(T &value)
+	void x_Stack<T>::pop(T &value)
 	{
 		if (!isEmpty())
 		{
@@ -57,7 +57,7 @@ namespace x
 	}
 
 	template < class T >
-	x::x_Bool Stack<T>::isEmpty()
+	x::x_Bool x_Stack<T>::isEmpty()
 	{
 		x::x_Bool status;
 
