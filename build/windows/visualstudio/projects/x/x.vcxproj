@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\source\x\x.cpp" />
+    <ClCompile Include="..\..\..\..\..\include\x\x_windowhandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_devicecontexthandler.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_app.cpp" />
-    <ClCompile Include="..\..\..\..\..\source\x\x_event.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_graphics.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_opengles2.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -30,19 +31,21 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\source\x\x_platform.cpp" />
-    <ClCompile Include="..\..\..\..\..\source\x\x_stack.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_string.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_win32.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\include\x\x.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_opengles2.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_devicecontexthandler.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_app.h" />
-    <ClInclude Include="..\..\..\..\..\include\x\x_event.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_exports.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_graphics.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_platform.h" />
-    <ClInclude Include="..\..\..\..\..\include\x\x_stack.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_queue.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_win32.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_string.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_types.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_windowhandler.h" />
     <ClInclude Include="..\..\..\..\..\source\x\x_pch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -129,7 +132,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>x_pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\..\..\..\..\source\x;..\..\..\..\..\angle\include</AdditionalIncludeDirectories>
@@ -144,7 +147,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>x_pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\..\..\..\..\source\x;..\..\..\..\..\angle\include</AdditionalIncludeDirectories>
@@ -161,7 +164,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>x_pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\..\..\..\..\source\x;..\..\..\..\..\angle\include</AdditionalIncludeDirectories>
@@ -180,7 +183,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;_USRDLL;X_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeaderFile>x_pch.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>..\..\..\..\..\include;..\..\..\..\..\source\x;..\..\..\..\..\angle\include</AdditionalIncludeDirectories>

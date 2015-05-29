@@ -8,12 +8,27 @@ namespace x
 	class X_API x_String
 	{
 	public:
+		// Constructor
 		x_String::x_String();
-		x_String::x_String(const char * cstring);
+
+		// Destructor
 		virtual x_String::~x_String();
-		operator x_PWchar32();
+
+		// Copy constructors
+		x_String::x_String(const char c);
+		x_String::x_String(const char * pSchar8);
+		x_String::x_String(const x_PWchar pWchar);
+		x_String::x_String(const x_String& str);
+
+		// Information
+		x_PWchar getPWchar();
+		size_t getLength();
+
+
 	private:
-		x_PWchar32 m_wcstring;
+		size_t convert(const char *pSchar8, x_PWchar& pWchar);
+		x_PWchar m_pWchar;
+		size_t m_length;
 	};
 
 }

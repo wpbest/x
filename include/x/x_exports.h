@@ -6,4 +6,6 @@
 #else
 #define X_API __declspec(dllimport)
 #endif
+#else
+#define X_API
 #endif

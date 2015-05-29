@@ -21,19 +21,7 @@
     <ClCompile Include="..\..\..\..\..\source\x\x_pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\source\x\x.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\..\source\x\x_app.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\source\x\x_string.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\source\x\x_stack.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\source\x\x_event.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\source\x\x_platform.cpp">
@@ -42,13 +30,25 @@
     <ClCompile Include="..\..\..\..\..\source\x\x_graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\include\x\x_windowhandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_devicecontexthandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_opengles2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\source\x\x_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\source\x\x_pch.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\..\include\x\x.h">
-      <Filter>Interface Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\include\x\x_app.h">
       <Filter>Interface Files</Filter>
@@ -62,16 +62,25 @@
     <ClInclude Include="..\..\..\..\..\include\x\x_string.h">
       <Filter>Interface Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\..\include\x\x_stack.h">
-      <Filter>Interface Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\..\include\x\x_event.h">
-      <Filter>Interface Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\..\include\x\x_platform.h">
       <Filter>Interface Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\include\x\x_graphics.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_windowhandler.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_devicecontexthandler.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_opengles2.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_win32.h">
+      <Filter>Interface Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\include\x\x_queue.h">
       <Filter>Interface Files</Filter>
     </ClInclude>
   </ItemGroup>

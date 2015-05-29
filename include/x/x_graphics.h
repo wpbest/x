@@ -1,23 +1,24 @@
 #pragma once
+
 #include "x/x_types.h"
 #include "x/x_platform.h"
 
 namespace x
 {
-	class x_Graphics
+	class X_API x_Graphics
 	{
 	public:
 		x_Graphics::x_Graphics();
 		virtual x_Graphics::~x_Graphics();
-		void draw();
-		x_Bool create(x_Platform::x_WindowHandler *windowHandler,
-			          x_Platform::x_DeviceContextHandler *deviceContextHandler);
-		void destroy();
-		void present();
-		void size(x_Sint32 width, x_Sint32 height);
+		virtual x_Bool create(x_WindowHandler windowHandler, x_DeviceContextHandler deviceContextHandler) = 0;
+		virtual void destroy() = 0;
+		virtual void clear() = 0;
+		virtual void draw() = 0;
+		virtual void present() = 0;
+		virtual void size(x_Sint32 width, x_Sint32 height) = 0;
 
-	private:
-		x_Platform::x_WindowHandler *m_windowHandler;
-		x_Platform::x_DeviceContextHandler *m_deviceContextHandler;
+	protected:
+		x_WindowHandler m_windowHandler;
+		x_DeviceContextHandler m_deviceContextHandler;
 	};
 }
