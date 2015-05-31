@@ -1,9 +1,6 @@
 #include "x_pch.h"
 #include "x/x_app.h"
 
-#include "x/x_Win32.h"
-#include "x/x_opengles2.h"
-
 namespace x
 {
 	

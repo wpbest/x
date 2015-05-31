@@ -125,6 +125,8 @@ namespace x
 	{
 			switch (message)
 			{
+			//case WM_ERASEBKGND:
+			//	return TRUE; // tell Windows that we handled it. (but don't actually draw anything)
 			case WM_DESTROY:
 				break;
 			case WM_CLOSE:

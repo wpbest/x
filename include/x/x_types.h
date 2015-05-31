@@ -14,6 +14,9 @@ namespace x
 	typedef uint32_t        x_Uint32,   *x_PUint32;
 	typedef int64_t         x_Sint64,   *x_PSint64;
 	typedef uint64_t        x_Uint64,   *x_PUint64;
+	typedef char            x_Char8,    *x_PChar8;
+	typedef char16_t        x_Char16,   *x_PChar16;
+	typedef char32_t        x_Char32,   *x_PChar32;
 	typedef wchar_t         x_Wchar,    *x_PWchar;
 	typedef float           x_Float32,  *x_PFloat32;
 	typedef double          x_Float64,  *x_PFloat64;

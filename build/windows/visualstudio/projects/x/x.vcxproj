@@ -20,9 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\include\x\x_windowhandler.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_android.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_devicecontexthandler.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_app.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_gdiplus.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_graphics.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_graphicsfactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_ios.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_opengles2.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -31,21 +35,29 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\source\x\x_platform.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_platformfactory.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_string.cpp" />
     <ClCompile Include="..\..\..\..\..\source\x\x_win32.cpp" />
+    <ClCompile Include="..\..\..\..\..\source\x\x_winrt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\include\x\x_android.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_graphicsfactory.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_gdiplus.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_ios.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_opengles2.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_devicecontexthandler.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_app.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_exports.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_graphics.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_platform.h" />
-    <ClInclude Include="..\..\..\..\..\include\x\x_queue.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_platformfactory.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_win32.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_string.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_types.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_win32types.h" />
     <ClInclude Include="..\..\..\..\..\include\x\x_windowhandler.h" />
+    <ClInclude Include="..\..\..\..\..\include\x\x_winrt.h" />
     <ClInclude Include="..\..\..\..\..\source\x\x_pch.h" />
   </ItemGroup>
   <ItemGroup>

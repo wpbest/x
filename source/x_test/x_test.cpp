@@ -1,8 +1,9 @@
 #include "x_test_pch.h"
 
 #include "x_test.h"
-#include "x/x_opengles2.h"
-#include "x/x_win32.h"
+
+#include "x/x_platformfactory.h"
+#include "x/x_graphicsfactory.h"
 
 TestApp::TestApp()
 {
@@ -53,25 +54,32 @@ void TestApp::onSize(x::x_Sint32 x, x::x_Sint32 y)
 
 int main(int argc, char* argv[])
 {
-	x::x_Graphics* pGraphics = new x::x_OpenGLES2();
-	x::x_Platform* pPlatform = new x::x_Win32();
+	TestApp app;
+	x::x_PlatformFactory platformFactory;
+	x::x_GraphicsFactory graphicsFoctory;
 	x::x_Sint32 exitCode = 1;
 	x::x_String windowTitle("X Test");
+	x::x_PlatformType platformType = x::x_PlatformType_Win32;
+	x::x_GraphicsType graphicsType = x::x_GraphicsType_GDIPlus;
 
-	TestApp app;
+	if (!platformFactory.create(platformType))
+	{
+		return 1;
+	}
 
-	app.setGraphics(pGraphics);
-	
-	app.setPlatform(pPlatform);
+	if (!graphicsFoctory.create(graphicsType))
+	{
+		return 1;
+	}
+
+	app.setPlatform(platformFactory.get());
+
+	app.setGraphics(graphicsFoctory.get());
 
 	if (app.create(windowTitle, 1024, 768))
 	{
 		exitCode = app.run();
 	}
-
-	if (pGraphics) delete pGraphics;
-
-	if (pPlatform) delete pPlatform;
 
 	return exitCode;
 }
